@@ -1,23 +1,34 @@
 const arrayBici = [
 
     biciFiamma = {
-        "nome": "Fiamma",
-        "peso": 30
+        nome: "Fiamma",
+        peso: 30
     },
 
     biciLampo = {
-        "nome": "Lampo",
-        "peso": 20
+        nome: "Lampo",
+        peso: 20
     },
 
     biciTurbine = {
-        "nome": "Turbine",
-        "peso": 40
+        nome: "Turbine",
+        peso: 40
     }
 
 ]
 
-const [x, y, z] = arrayBici;
-console.log(arrayBici[1]);
+let {peso} = arrayBici[0];
+console.log(peso);
+let {nome} = arrayBici[0];
+console.log(nome);
 
-alert (`La bici con il peso minore è ${arrayBici[1].nome}`);
+for (let i = 0; i < arrayBici.length; i++) {
+
+    if (peso > arrayBici[i].peso) {
+        peso = arrayBici[i].peso;
+        nome = arrayBici[i].nome;
+    }
+}
+
+console.log(peso);
+alert (`La bicicletta con il peso minore è il modello ${nome} dal peso di ${peso} kg.`);

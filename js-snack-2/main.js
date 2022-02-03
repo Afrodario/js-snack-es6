@@ -1,4 +1,4 @@
-const disneyVillains = [
+let disneyVillains = [
 
     Scar = {
         "nome": "Scar",
@@ -34,12 +34,16 @@ for (let i = 0; i < disneyVillains.length; i++) {
     
     disneyVillains[i].punti_fatti = randomNumber(1,10);
     console.log(`I punti fatti da ${disneyVillains[i].nome} sono ${disneyVillains[i].punti_fatti}`);
+    
 
     disneyVillains[i].falli_subiti = randomNumber(1,10);
     console.log(`I falli subiti da ${disneyVillains[i].nome} sono ${disneyVillains[i].falli_subiti}`);
+    
+    let {nome, falli_subiti} = disneyVillains[i];
+    nuovoArray[i] = {nome, falli_subiti};
 }
 
-const [a, b, c, d] = disneyVillains;
+console.log(nuovoArray);
 
 
 

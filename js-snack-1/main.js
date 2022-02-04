@@ -17,10 +17,7 @@ const arrayBici = [
 
 ]
 
-let {peso} = arrayBici[0];
-console.log(peso);
-let {nome} = arrayBici[0];
-console.log(nome);
+let {peso, nome} = arrayBici[0];
 
 for (let i = 0; i < arrayBici.length; i++) {
 

@@ -45,13 +45,6 @@ for (let i = 0; i < disneyVillains.length; i++) {
 
 console.log(nuovoArray);
 
-
-
-
-
-
-
-
 function randomNumber (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
